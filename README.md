@@ -8,84 +8,100 @@
 
 ---
 
-## 🎮 About the Project
+## 🎮 About
 
-A fun Doraemon-inspired **interactive digital toy** that reacts like a living character.  
-It has emotions, chat responses (offline brain), and mini arcade games.
+A fun Doraemon-inspired interactive **digital toy app** with:
+- Emotions 🎭  
+- Offline chat brain 💬  
+- Mini arcade games 🎮  
 
-No heavy AI nonsense. Just pure fun, logic, and chaos 😏
+No AI hype. Just pure fun + logic 😏
 
 ---
 
 ## ✨ Features
 
 ### 🎭 Character System
-- Doraemon-style animated character
-- Emotions system:
-  - 😊 Happy
-  - 😂 Laughing
-  - 😨 Scared
-  - 😳 Shocked
-  - 😐 Normal
-- Blink + idle animations
+- Animated Doraemon-like character
+- Emotions:
+  - happy
+  - laughing
+  - scared
+  - shocked
+  - normal
+- Idle blink animations
 
 ---
 
-### 💬 Chat System (Offline Brain)
+### 💬 Offline Chat Brain
 - Keyword-based responses
-- Lightweight logic (no AI required)
-- Example:
-  - "hello" → greeting
-  - "mouse" → scared reaction
-  - "dorayaki" → happiness 🍩
+- Lightweight logic system
+- Examples:
+  - hello → greeting
+  - mouse → scared reaction
+  - dorayaki → happiness 🍩
 
 ---
 
 ### 🎮 Mini Games
-- ❌⭕ Tic Tac Toe
-- ✊✋✌️ Rock Paper Scissors
-- 🔢 Number Guess Game
-- 🧠 Memory Game
-- ❓ Quiz Mode
-
----
-
-### 🗣️ Voice Output (Optional)
-- Browser Speech Synthesis
-- Doraemon can speak replies (toggleable)
-
----
-
-### 🎤 Voice Input (Optional)
-- Web Speech API / Whisper support
-- Voice → Text → Interaction
+- Tic Tac Toe ❌⭕
+- Rock Paper Scissors ✊✋✌️
+- Number Guess 🔢
+- Memory Game 🧠
+- Quiz Mode ❓
 
 ---
 
 ## 🧠 Tech Stack
 
 - HTML5
-- CSS3 (Animations)
+- CSS3
 - Vanilla JavaScript
-- Web Speech API (optional)
-- WebSocket (optional for voice modules)
-
+- 
 ---
 
-## 📁 Project Structure
+## 📁 Structure
 
-```bash
 Doraemon-Toy/
-│
 ├── index.html
 ├── style.css
 ├── script.js
-│
 ├── games/
 │   ├── tictactoe.js
 │   ├── rps.js
-│   ├── guess.js
-│
+│   └── guess.js
 └── assets/
-    ├── animations
-    ├── sprites
+
+---
+
+## 🚀 Run Project
+
+Clone repo:
+git clone https://github.com/your-username/doraemon-toy
+
+Open folder:
+cd doraemon-toy
+
+Then open:
+index.html
+
+Or use Live Server 🔥
+
+---
+
+## 🎯 Flow
+
+Input → Detection → Emotion Change → Response / Game
+
+---
+
+## ⚡ Philosophy
+
+Not an AI assistant.  
+Just a **fun digital toy with personality** 😏
+
+---
+
+## 🍩 Final Note
+
+If it makes you smile, it’s a success.
