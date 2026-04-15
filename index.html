@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Doraemon Face App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- GAMES BAR -->
+  <div class="games-bar">
+    <button class="btn btn-cute btn-blue" style="padding: 8px 15px; font-size: 14px;" onclick="startGame('rps')">Rock Paper Scissors ✊</button>
+    <button class="btn btn-cute btn-blue" style="padding: 8px 15px; font-size: 14px;" onclick="startGame('numguess')">Number Guess 🔢</button>
+    <button class="btn btn-cute btn-blue" style="padding: 8px 15px; font-size: 14px;" onclick="startGame('truthdare')">Truth/Dare 🎭</button>
+    <button class="btn btn-cute btn-blue" style="padding: 8px 15px; font-size: 14px;" onclick="openGameModal('tictactoe')">Tic Tac Toe ❌</button>
+    <button class="btn btn-cute btn-blue" style="padding: 8px 15px; font-size: 14px;" onclick="openGameModal('memory')">Memory Game 🧠</button>
+  </div>
+
+  <!-- LEFT SIDEBAR -->
+  <div class="sidebar sidebar-left">
+    <button class="btn btn-cute btn-blue" onclick="setEmotion('happy')">Happy ✨</button>
+    <button class="btn btn-cute btn-blue" onclick="setEmotion('laughing')">Laughing 😂</button>
+    <button class="btn btn-cute btn-blue" onclick="setEmotion('thinking')">Thinking 🤔</button>
+    <button class="btn btn-cute btn-blue" onclick="setEmotion('cool')">Cool 😎</button>
+    <button class="btn btn-cute btn-blue" onclick="setEmotion('proud')">Proud 😤</button>
+  </div>
+
+  <!-- RIGHT SIDEBAR -->
+  <div class="sidebar sidebar-right">
+    <button class="btn btn-cute btn-red" onclick="setEmotion('sad')">Sad 🥺</button>
+    <button class="btn btn-cute btn-red" onclick="setEmotion('cry')">Cry 😭</button>
+    <button class="btn btn-cute btn-red" onclick="setEmotion('angry')">Angry 😡</button>
+    <button class="btn btn-cute btn-red" onclick="setEmotion('shocked')">Shocked 😱</button>
+    <button class="btn btn-cute btn-red" onclick="setEmotion('scared')">Scared 😨</button>
+  </div>
+
+  <!-- MAIN DORAEMON CONTAINER -->
+  <div id="doraemon-reply" class="response-bubble">Hello! I am Doraemon!</div>
+  
+  <div class="container">
+    <div class="doraemon">
+      <div class="face-white">
+        <!-- Blushes -->
+        <div class="blush left"></div>
+        <div class="blush right"></div>
+      </div>
+      
+      <!-- Eyes -->
+      <div class="eye-left"><div class="eyeball"></div></div>
+      <div class="eye-right"><div class="eyeball"></div></div>
+
+      <!-- Features -->
+      <div class="nose"></div>
+      <div class="nose-line"></div>
+      
+      <div class="whiskers whiskers-left">
+        <div class="whisker"></div><div class="whisker"></div><div class="whisker"></div>
+      </div>
+      <div class="whiskers whiskers-right">
+        <div class="whisker"></div><div class="whisker"></div><div class="whisker"></div>
+      </div>
+
+      <div class="mouth"></div>
+
+      <!-- Effects -->
+      <div class="vein"><div class="vein-icon"></div></div>
+      <div class="sunglasses"><div class="lens l"></div><div class="bridge"></div><div class="lens r"></div></div>
+      <div class="pallor"></div>
+
+    </div>
+    
+    <!-- Collar & Bell -->
+    <div class="collar"></div>
+    <div class="bell"><div class="bell-line"></div></div>
+    
+    <!-- Float Shadow -->
+    <div class="float-shadow"></div>
+  </div>
+
+  <!-- Chat Input Box -->
+  <div class="chat-container">
+      <input type="text" id="user-input" class="chat-input" placeholder="Say something to Doraemon..." onkeydown="if(event.key==='Enter') sendMessage()">
+      <button class="chat-send" onclick="sendMessage()">Send</button>
+  </div>
+
+  <!-- GAME MODALS -->
+  <div id="game-modal" class="game-modal">
+      <button class="close-btn" onclick="closeGameModal()">X</button>
+      <h2 id="game-title" style="margin-top:0; color: #2c3e50;">Game</h2>
+      <div id="game-content"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
